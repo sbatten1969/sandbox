@@ -2,13 +2,13 @@
 
 public class PossiblyBuggyCode {
 	public static void main (String[] args) throws java.lang.Exception {
-		// Ignore this.  See local class definitions below.
+		System.out.printf("Ignore this method. Code to investigate is in local class below.\n");
 	}
 }
 
 class SamplePossiblyBuggyClass {
 	public String method1() {
-		String uninitializedReturnValue;
-		return uninitializedReturnValue;
+		String possiblyUninitializedReturnValue = "";
+		return possiblyUninitializedReturnValue;
 	}
 }
